@@ -76,5 +76,15 @@ function addMarkers(){
 	myMovingMarker.start();
 }
 
+(function loop() {
+	var randomNumber = Math.floor((Math.random() * 900000) + 300000);
+	setTimeout(function(){
+		addMarkers();
+		loop();
+	}, randomNumber);
+}());
+
+
+
 
 
