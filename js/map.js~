@@ -21,6 +21,7 @@ function addMarkers(){
 	var totalTime = routing._routes[0].summary.totalTime; //seconds
 	var myMovingMarker = L.Marker.movingMarker(routing._routes[0]["coordinates"],
 			totalTime*1000).addTo(map);	
+>>>>>>> 7daa3b283334bce24deda01a68fdea97655b7d99
 	myMovingMarker.start();
 }
 
